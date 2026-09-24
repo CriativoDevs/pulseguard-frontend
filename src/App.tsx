@@ -4,6 +4,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { LinkButton } from "./components/LinkButton";
 import { Dashboard } from "./pages/Dashboard";
+import { Metrics } from "./pages/Metrics";
 import { client } from "./api/client";
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
@@ -14,7 +15,6 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   return <>{children}</>;
 };
 
-const Metrics = () => <div className="card p-4">Metrics</div>;
 const Notifications = () => <div className="card p-4">Notifications</div>;
 const Billing = () => <div className="card p-4">Billing</div>;
 const Members = () => <div className="card p-4">Members</div>;
