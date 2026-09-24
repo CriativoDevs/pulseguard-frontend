@@ -11,6 +11,7 @@ export interface Server {
   check_interval?: number;
   timeout?: number;
   status?: "up" | "down" | "degraded" | "unknown";
+  monitoring_status?: "up" | "down" | "degraded" | "unknown";
   /** Comma-separated tags, e.g. "web,prod" */
   tags?: string;
   notify_on_failure?: boolean;

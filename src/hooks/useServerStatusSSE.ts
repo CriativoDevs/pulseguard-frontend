@@ -10,9 +10,20 @@ export function useServerStatusSSE() {
   const [pings, setPings] = useState<Record<number, any>>({});
   const [error, setError] = useState<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
+  const retryTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     let active = true;
+    let retryDelay = 1000;
+
+    const scheduleReconnect = (connect: () => void) => {
+      if (!active || retryTimeoutRef.current) return;
+      retryTimeoutRef.current = setTimeout(() => {
+        retryTimeoutRef.current = null;
+        retryDelay = Math.min(retryDelay * 2, 10000);
+        connect();
+      }, retryDelay);
+    };
 
     async function connect() {
       abortRef.current?.abort();
@@ -32,10 +43,12 @@ export function useServerStatusSSE() {
 
         if (!response.ok || !response.body) {
           setError(`Stream error: ${response.status}`);
+          scheduleReconnect(connect);
           return;
         }
 
         setError(null);
+        retryDelay = 1000;
 
         const reader = response.body.getReader();
         const decoder = new TextDecoder();
@@ -74,10 +87,13 @@ export function useServerStatusSSE() {
             }
           }
         }
+
+        scheduleReconnect(connect);
       } catch (err: any) {
         if (err.name !== "AbortError" && active) {
-          console.warn("SSE disconnected, will not retry automatically:", err);
+          console.warn("SSE disconnected; retrying automatically:", err);
           setError("Stream desligado");
+          scheduleReconnect(connect);
         }
       }
     }
@@ -87,6 +103,10 @@ export function useServerStatusSSE() {
     return () => {
       active = false;
       abortRef.current?.abort();
+      if (retryTimeoutRef.current) {
+        clearTimeout(retryTimeoutRef.current);
+        retryTimeoutRef.current = null;
+      }
     };
   }, []);
 

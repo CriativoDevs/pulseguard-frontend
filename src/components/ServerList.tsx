@@ -79,11 +79,11 @@ export function ServerList({ onStatsChange }: Props) {
   useEffect(() => {
     if (!onStatsChange) return;
     const healthy = servers.filter((s) => {
-      const st = statuses[s.id]?.status ?? s.status;
+      const st = statuses[s.id]?.status ?? s.monitoring_status ?? "unknown";
       return st === "up";
     }).length;
     const issues = servers.filter((s) => {
-      const st = statuses[s.id]?.status ?? s.status;
+      const st = statuses[s.id]?.status ?? s.monitoring_status ?? "unknown";
       return st === "down" || st === "degraded";
     }).length;
     onStatsChange(servers.length, healthy, issues);
@@ -143,7 +143,9 @@ export function ServerList({ onStatsChange }: Props) {
       <div className="space-y-3">
         {servers.map((server) => {
           const status = statuses[server.id] || {};
-          const currentStatus = normalizeStatus(status.status ?? server.status);
+          const currentStatus = normalizeStatus(
+            status.status ?? server.monitoring_status
+          );
           const ping = pings[server.id];
 
           return (
