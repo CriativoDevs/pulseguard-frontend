@@ -1,0 +1,360 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - link "Criativo Devs TimelyOne" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]: Criativo Devs
+        - generic [ref=e8]: TimelyOne
+      - generic [ref=e9]:
+        - button "Ativar tema escuro" [ref=e10] [cursor=pointer]:
+          - img [ref=e11]
+        - button "Alterar idioma" [ref=e14] [cursor=pointer]:
+          - generic [ref=e15]: 🇵🇹
+        - button "Instalar" [ref=e16] [cursor=pointer]
+        - link "Área do Cliente" [ref=e17] [cursor=pointer]:
+          - /url: /client/enter
+        - link "Entrar" [ref=e18] [cursor=pointer]:
+          - /url: /login
+        - link "Registar" [ref=e19] [cursor=pointer]:
+          - /url: /register
+  - main [ref=e20]:
+    - generic [ref=e22]:
+      - paragraph [ref=e23]: Gestão e Agendamento Inteligente
+      - heading "A plataforma premium de agendamento e gestão para negócios modernos." [level=1] [ref=e24]
+      - paragraph [ref=e25]: O TimelyOne automatiza horários, reduz faltas, melhora a experiência dos clientes e profissionaliza a operação do seu negócio — tudo num painel rápido, elegante e pronto para equipas de qualquer dimensão.
+      - list [ref=e26]:
+        - listitem [ref=e27]: Reduza faltas até 35% com lembretes automáticos.
+        - listitem [ref=e28]: Agendamentos 24/7, mesmo fora do horário.
+        - listitem [ref=e29]: Interface intuitiva para equipa e clientes.
+        - listitem [ref=e30]: "Pronto para escalar: freelancers → franquias."
+      - generic [ref=e31]:
+        - link "Começar período trial (14 dias)" [ref=e32] [cursor=pointer]:
+          - /url: /register
+        - link "Ver planos e preços" [ref=e33] [cursor=pointer]:
+          - /url: "#pricing"
+    - generic [ref=e35]:
+      - heading "Resultados que falam por si." [level=2] [ref=e36]
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - img [ref=e39]
+          - paragraph [ref=e42]: +52%
+          - paragraph [ref=e43]: Clientes a reservar online
+        - generic [ref=e44]:
+          - img [ref=e45]
+          - paragraph [ref=e48]: "-30%"
+          - paragraph [ref=e49]: Tempo perdido ao telefone
+        - generic [ref=e50]:
+          - img [ref=e51]
+          - paragraph [ref=e54]: +41%
+          - paragraph [ref=e55]: Receita média por cliente
+        - generic [ref=e56]:
+          - img [ref=e57]
+          - paragraph [ref=e60]: 99.98%
+          - paragraph [ref=e61]: Uptime e fiabilidade
+    - generic [ref=e63]:
+      - heading "O dia a dia do seu negócio não precisa ser caótico." [level=2] [ref=e64]
+      - generic [ref=e65]:
+        - list [ref=e67]:
+          - listitem [ref=e68]: Ligações constantes a pedir horários
+          - listitem [ref=e69]: Confusão com agendas diferentes
+          - listitem [ref=e70]: Profissionais a gerir reservas no telemóvel
+          - listitem [ref=e71]: Faltas de clientes sem aviso
+          - listitem [ref=e72]: Clientes frustrados ao tentar remarcar
+          - listitem [ref=e73]: Falta de visibilidade sobre desempenho e faturação
+        - generic [ref=e74]:
+          - paragraph [ref=e75]: "TimelyOne resolve tudo automaticamente:"
+          - list [ref=e76]:
+            - listitem [ref=e77]: Agenda unificada para toda a equipa
+            - listitem [ref=e78]: Agendamentos online para clientes
+            - listitem [ref=e79]: Sincronização automática entre unidades
+            - listitem [ref=e80]: Lembretes automáticos por email / SMS / WhatsApp
+            - listitem [ref=e81]: Painel com KPIs, fluxo diário e histórico
+            - listitem [ref=e82]: "Relatórios inteligentes: faturação, serviços, horários, ocupação"
+    - generic [ref=e84]:
+      - heading "Veja antes de experimentar." [level=2] [ref=e85]
+      - paragraph [ref=e86]: Usabilidade pensada ao detalhe. Rápido, intuitivo e pronto para qualquer equipa.
+      - generic [ref=e87]:
+        - generic [ref=e88]:
+          - button "Anterior" [ref=e89] [cursor=pointer]
+          - button "Próximo" [ref=e90] [cursor=pointer]
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - img "Agenda diária" [ref=e95]
+            - paragraph [ref=e96]: Agenda diária
+          - generic [ref=e97]:
+            - img "Lista de clientes" [ref=e99]
+            - paragraph [ref=e100]: Lista de clientes
+          - generic [ref=e101]:
+            - img "Relatório mensal" [ref=e103]
+            - paragraph [ref=e104]: Relatório mensal
+          - generic [ref=e105]:
+            - img "Configuração de profissionais" [ref=e107]
+            - paragraph [ref=e108]: Configuração de profissionais
+          - generic [ref=e109]:
+            - img "PWA cliente" [ref=e111]
+            - paragraph [ref=e112]: PWA cliente
+    - generic [ref=e115]:
+      - heading "A sua operação, totalmente digital." [level=2] [ref=e116]
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - img [ref=e119]
+          - heading "Agendamentos 24/7" [level=4] [ref=e121]
+          - paragraph [ref=e122]: Reservas online a qualquer hora, com confirmação automática.
+        - generic [ref=e123]:
+          - img [ref=e124]
+          - heading "Gestão de Equipa" [level=4] [ref=e129]
+          - paragraph [ref=e130]: Horários, folgas, salas, cadeiras e mais.
+        - generic [ref=e131]:
+          - img [ref=e132]
+          - heading "Lembretes Inteligentes" [level=4] [ref=e135]
+          - paragraph [ref=e136]: Email, SMS e WhatsApp para reduzir faltas.
+        - generic [ref=e137]:
+          - img [ref=e138]
+          - heading "PWA Equipa e Clientes" [level=4] [ref=e140]
+          - paragraph [ref=e141]: Instalável no telemóvel, sem lojas tradicionais.
+        - generic [ref=e142]:
+          - img [ref=e143]
+          - heading "Relatórios em Tempo Real" [level=4] [ref=e145]
+          - paragraph [ref=e146]: Faturação, ocupação e serviços mais vendidos.
+        - generic [ref=e147]:
+          - img [ref=e148]
+          - heading "Escalável para Franquias" [level=4] [ref=e152]
+          - paragraph [ref=e153]: Permissões e relatórios consolidados.
+        - generic [ref=e154]:
+          - img [ref=e155]
+          - heading "Domínio Personalizado (Pro)" [level=4] [ref=e158]
+          - paragraph [ref=e159]: Marca e URL próprios.
+        - generic [ref=e160]:
+          - img [ref=e161]
+          - heading "Integrações (Enterprise)" [level=4] [ref=e163]
+          - paragraph [ref=e164]: Google Calendar, Stripe e mais.
+    - generic [ref=e166]:
+      - generic [ref=e167]:
+        - heading "Planos claros. Sem taxas escondidas." [level=2] [ref=e168]
+        - paragraph [ref=e169]: Escolha o plano que acompanha o crescimento do seu negócio.
+      - generic [ref=e170]:
+        - generic [ref=e171]:
+          - generic [ref=e172]:
+            - heading "Basic – 29€ / mês" [level=3] [ref=e173]
+            - paragraph [ref=e174]: €29/mês
+            - list [ref=e175]:
+              - listitem [ref=e176]:
+                - img [ref=e177]
+                - generic [ref=e180]: PWA Admin/Manager/Staff
+              - listitem [ref=e181]:
+                - img [ref=e182]
+                - generic [ref=e185]: Relatórios básicos
+              - listitem [ref=e186]:
+                - img [ref=e187]
+                - generic [ref=e190]: Email e web push
+          - link "Iniciar 14 dias grátis" [ref=e191] [cursor=pointer]:
+            - /url: /register
+        - generic [ref=e192]:
+          - generic [ref=e193]:
+            - generic [ref=e194]: Mais escolhido
+            - heading "Standard – 55€ / mês" [level=3] [ref=e195]
+            - paragraph [ref=e196]: €55/mês
+            - list [ref=e197]:
+              - listitem [ref=e198]:
+                - img [ref=e199]
+                - generic [ref=e202]: Tudo do Basic
+              - listitem [ref=e203]:
+                - img [ref=e204]
+                - generic [ref=e207]: PWA Cliente
+              - listitem [ref=e208]:
+                - img [ref=e209]
+                - generic [ref=e212]: €5 de crédito incluído
+          - link "Iniciar 14 dias grátis" [ref=e213] [cursor=pointer]:
+            - /url: /register
+        - generic [ref=e214]:
+          - generic [ref=e215]:
+            - heading "Pro – 95€ / mês" [level=3] [ref=e216]
+            - paragraph [ref=e217]: €95/mês
+            - list [ref=e218]:
+              - listitem [ref=e219]:
+                - img [ref=e220]
+                - generic [ref=e223]: Tudo do Standard
+              - listitem [ref=e224]:
+                - img [ref=e225]
+                - generic [ref=e228]: White-label + domínio personalizado
+              - listitem [ref=e229]:
+                - img [ref=e230]
+                - generic [ref=e233]: €25 de crédito incluído
+          - link "Iniciar 14 dias grátis" [ref=e234] [cursor=pointer]:
+            - /url: /register
+        - generic [ref=e235]:
+          - generic [ref=e236]:
+            - generic [ref=e237]: Em breve
+            - heading "Enterprise – 199€ / mês" [level=3] [ref=e238]
+            - paragraph [ref=e239]: €199/mês
+            - list [ref=e240]:
+              - listitem [ref=e241]:
+                - img [ref=e242]
+                - generic [ref=e245]: Apps nativas iOS/Android
+              - listitem [ref=e246]:
+                - img [ref=e247]
+                - generic [ref=e250]: Integrações sob demanda
+          - generic [ref=e251]: Em breve
+    - generic [ref=e253]:
+      - heading "Começar é simples." [level=2] [ref=e254]
+      - generic [ref=e255]:
+        - generic [ref=e256]:
+          - generic [ref=e257]: "1"
+          - heading "Crie a sua conta." [level=4] [ref=e258]
+          - paragraph [ref=e259]: Sem cartão, sem compromisso.
+        - generic [ref=e260]:
+          - generic [ref=e261]: "2"
+          - heading "Configure a equipa e serviços." [level=4] [ref=e262]
+          - paragraph [ref=e263]: Tudo pronto em minutos.
+        - generic [ref=e264]:
+          - generic [ref=e265]: "3"
+          - heading "Ative os agendamentos online." [level=4] [ref=e266]
+          - paragraph [ref=e267]: Os clientes começam a reservar.
+    - generic [ref=e269]:
+      - heading "Criado para negócios reais." [level=2] [ref=e270]
+      - paragraph [ref=e271]: Adapta-se ao seu fluxo — seja qual for o setor.
+      - generic [ref=e272]:
+        - generic [ref=e273]:
+          - heading "Salões de Beleza" [level=4] [ref=e274]
+          - paragraph [ref=e275]: Serviços e durações diferentes
+        - generic [ref=e276]:
+          - heading "Barbearias" [level=4] [ref=e277]
+          - paragraph [ref=e278]: Rotação rápida de cadeiras
+        - generic [ref=e279]:
+          - heading "Tatuagem" [level=4] [ref=e280]
+          - paragraph [ref=e281]: Sessões longas e depósitos
+        - generic [ref=e282]:
+          - heading "Estética" [level=4] [ref=e283]
+          - paragraph [ref=e284]: Pacotes e salas de tratamento
+        - generic [ref=e285]:
+          - heading "Freelancers" [level=4] [ref=e286]
+          - paragraph [ref=e287]: Visão simples, tudo num lugar
+    - generic [ref=e289]:
+      - heading "Profissionais reais. Resultados reais." [level=2] [ref=e290]
+      - generic [ref=e291]:
+        - generic [ref=e292]:
+          - img [ref=e293]
+          - paragraph [ref=e295]: Reduzimos as faltas em 40% no primeiro mês.
+        - generic [ref=e296]:
+          - img [ref=e297]
+          - paragraph [ref=e299]: A minha equipa deixou de gerir horários no WhatsApp.
+        - generic [ref=e300]:
+          - img [ref=e301]
+          - paragraph [ref=e303]: O painel é rápido, intuitivo e realmente profissional.
+      - paragraph [ref=e304]: "Avaliação média: ★ 4.9 / 5.0"
+    - generic [ref=e306]:
+      - heading "FAQ" [level=2] [ref=e307]
+      - generic [ref=e308]:
+        - button "Como funciona o período trial?" [ref=e310] [cursor=pointer]:
+          - generic [ref=e311]:
+            - img [ref=e312]
+            - generic [ref=e315]: Como funciona o período trial?
+          - img [ref=e316]
+        - button "Posso mudar de plano a qualquer momento?" [ref=e319] [cursor=pointer]:
+          - generic [ref=e320]:
+            - img [ref=e321]
+            - generic [ref=e324]: Posso mudar de plano a qualquer momento?
+          - img [ref=e325]
+        - button "Preciso de cartão de crédito para começar?" [ref=e328] [cursor=pointer]:
+          - generic [ref=e329]:
+            - img [ref=e330]
+            - generic [ref=e333]: Preciso de cartão de crédito para começar?
+          - img [ref=e334]
+        - button "O TimelyOne funciona no telemóvel?" [ref=e337] [cursor=pointer]:
+          - generic [ref=e338]:
+            - img [ref=e339]
+            - generic [ref=e342]: O TimelyOne funciona no telemóvel?
+          - img [ref=e343]
+        - button "Posso usar o meu próprio domínio?" [ref=e346] [cursor=pointer]:
+          - generic [ref=e347]:
+            - img [ref=e348]
+            - generic [ref=e351]: Posso usar o meu próprio domínio?
+          - img [ref=e352]
+        - button "Como funcionam os créditos de SMS/WhatsApp?" [ref=e355] [cursor=pointer]:
+          - generic [ref=e356]:
+            - img [ref=e357]
+            - generic [ref=e360]: Como funcionam os créditos de SMS/WhatsApp?
+          - img [ref=e361]
+        - button "O TimelyOne é compatível com o RGPD?" [ref=e364] [cursor=pointer]:
+          - generic [ref=e365]:
+            - img [ref=e366]
+            - generic [ref=e369]: O TimelyOne é compatível com o RGPD?
+          - img [ref=e370]
+        - button "É possível migrar dados do meu sistema atual?" [ref=e373] [cursor=pointer]:
+          - generic [ref=e374]:
+            - img [ref=e375]
+            - generic [ref=e378]: É possível migrar dados do meu sistema atual?
+          - img [ref=e379]
+        - button "Quantos profissionais posso adicionar?" [ref=e382] [cursor=pointer]:
+          - generic [ref=e383]:
+            - img [ref=e384]
+            - generic [ref=e387]: Quantos profissionais posso adicionar?
+          - img [ref=e388]
+        - button "Os clientes podem cancelar ou remarcar sozinhos?" [ref=e391] [cursor=pointer]:
+          - generic [ref=e392]:
+            - img [ref=e393]
+            - generic [ref=e396]: Os clientes podem cancelar ou remarcar sozinhos?
+          - img [ref=e397]
+        - button "O sistema suporta várias unidades/filiais?" [ref=e400] [cursor=pointer]:
+          - generic [ref=e401]:
+            - img [ref=e402]
+            - generic [ref=e405]: O sistema suporta várias unidades/filiais?
+          - img [ref=e406]
+        - button "A minha equipa pode ter acessos diferentes?" [ref=e409] [cursor=pointer]:
+          - generic [ref=e410]:
+            - img [ref=e411]
+            - generic [ref=e414]: A minha equipa pode ter acessos diferentes?
+          - img [ref=e415]
+        - button "Posso ver relatórios de faturação e desempenho?" [ref=e418] [cursor=pointer]:
+          - generic [ref=e419]:
+            - img [ref=e420]
+            - generic [ref=e423]: Posso ver relatórios de faturação e desempenho?
+          - img [ref=e424]
+        - button "Quanto tempo leva para configurar tudo?" [ref=e427] [cursor=pointer]:
+          - generic [ref=e428]:
+            - img [ref=e429]
+            - generic [ref=e432]: Quanto tempo leva para configurar tudo?
+          - img [ref=e433]
+        - button "Quanto tempo leva para configurar tudo?" [ref=e436] [cursor=pointer]:
+          - generic [ref=e437]:
+            - img [ref=e438]
+            - generic [ref=e441]: Quanto tempo leva para configurar tudo?
+          - img [ref=e442]
+    - generic [ref=e445]:
+      - heading "Segurança e privacidade de nível profissional." [level=2] [ref=e446]
+      - generic [ref=e447]:
+        - generic [ref=e448]:
+          - img [ref=e449]
+          - paragraph [ref=e452]: Compatível com RGPD
+        - generic [ref=e453]:
+          - img [ref=e454]
+          - paragraph [ref=e457]: Dados encriptados
+        - generic [ref=e458]:
+          - img [ref=e459]
+          - paragraph [ref=e462]: Backups recorrentes
+        - generic [ref=e463]:
+          - img [ref=e464]
+          - paragraph [ref=e467]: Infraestrutura escalável
+        - generic [ref=e468]:
+          - img [ref=e469]
+          - paragraph [ref=e472]: Alojamento europeu opcional
+    - generic [ref=e474]:
+      - heading "Crie a sua conta gratuita — leve o seu salão para o próximo nível." [level=2] [ref=e475]
+      - link "Começar agora (14 dias grátis)" [ref=e476] [cursor=pointer]:
+        - /url: /register
+  - contentinfo [ref=e477]:
+    - generic [ref=e478]:
+      - paragraph [ref=e479]: © 2025 Criativo Devs. Todos os direitos reservados.
+      - generic [ref=e480]:
+        - link "Planos" [ref=e481] [cursor=pointer]:
+          - /url: "#pricing"
+        - link "Área do Cliente" [ref=e482] [cursor=pointer]:
+          - /url: /client/enter
+        - link "Entrar" [ref=e483] [cursor=pointer]:
+          - /url: /login
+        - link "Registar" [ref=e484] [cursor=pointer]:
+          - /url: /register
+```
