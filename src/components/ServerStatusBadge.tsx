@@ -1,7 +1,9 @@
 import React from "react";
 
+export type ServerStatusBadgeStatus = "up" | "down" | "degraded" | "unknown";
+
 interface ServerStatusBadgeProps {
-  status: "up" | "down" | "degraded" | "unknown";
+  status: ServerStatusBadgeStatus;
   className?: string;
 }
 

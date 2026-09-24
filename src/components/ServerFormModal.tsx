@@ -60,9 +60,11 @@ export function ServerFormModal({ server, onClose, onSaved }: Props) {
       setError(null);
       const payload: ServerPayload = {
         ...form,
+        host: form.host.trim().replace(/^https?:\/\//, "").replace(/\/+$/, ""),
+        path:
+          form.path && form.path.startsWith("/") ? form.path : `/${form.path || ""}`,
         // Strip empty optional strings so backend doesn't complain
         description: form.description || undefined,
-        path: form.path || undefined,
         // Never send tags — backend defaults to blank
       };
       delete (payload as any).tags;

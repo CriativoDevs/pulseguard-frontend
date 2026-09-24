@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { type Server, serversApi } from "../api/servers";
-import { ServerStatusBadge } from "./ServerStatusBadge";
+import { ServerStatusBadge, type ServerStatusBadgeStatus } from "./ServerStatusBadge";
 import { ServerFormModal } from "./ServerFormModal";
 import { useServerStatusSSE } from "../hooks/useServerStatusSSE";
 
@@ -50,6 +50,12 @@ export function ServerList({ onStatsChange }: Props) {
   const [editingServer, setEditingServer] = useState<Server | null | undefined>(undefined); // undefined = closed
   const [deletingServer, setDeletingServer] = useState<Server | null>(null);
   const { statuses, pings } = useServerStatusSSE();
+
+  const normalizeStatus = (status: unknown): ServerStatusBadgeStatus => {
+    return status === "up" || status === "down" || status === "degraded" || status === "unknown"
+      ? status
+      : "unknown";
+  };
 
   const fetchServers = useCallback(async () => {
     try {
@@ -136,7 +142,8 @@ export function ServerList({ onStatsChange }: Props) {
     <>
       <div className="space-y-3">
         {servers.map((server) => {
-          const status = statuses[server.id] || { status: server.status ?? "unknown" };
+          const status = statuses[server.id] || {};
+          const currentStatus = normalizeStatus(status.status ?? server.status);
           const ping = pings[server.id];
 
           return (
@@ -148,7 +155,7 @@ export function ServerList({ onStatsChange }: Props) {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
                     <h3 className="font-semibold text-gray-900 dark:text-white truncate">{server.name}</h3>
-                    <ServerStatusBadge status={(status.status as any) || "unknown"} />
+                    <ServerStatusBadge status={currentStatus} />
                   </div>
                   <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
                     {server.protocol.toUpperCase()} · {server.host}:{server.port}

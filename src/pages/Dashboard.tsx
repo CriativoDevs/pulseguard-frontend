@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import { ServerList } from "../components/ServerList";
 import { ServerFormModal } from "../components/ServerFormModal";
 import { client } from "../api/client";
@@ -8,6 +8,9 @@ export function Dashboard() {
   const [showAddModal, setShowAddModal] = useState(false);
   const [refreshKey, setRefreshKey] = useState(0); // force ServerList re-mount after add
   const [stats, setStats] = useState({ total: 0, healthy: 0, issues: 0 });
+  const handleStatsChange = useCallback((total: number, healthy: number, issues: number) => {
+    setStats({ total, healthy, issues });
+  }, []);
 
   const handleRunChecks = async () => {
     try {
@@ -74,7 +77,7 @@ export function Dashboard() {
         <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Servidores</h2>
         <ServerList
           key={refreshKey}
-          onStatsChange={(total, healthy, issues) => setStats({ total, healthy, issues })}
+          onStatsChange={handleStatsChange}
         />
       </div>
 
